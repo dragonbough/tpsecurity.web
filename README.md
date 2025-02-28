@@ -1,1 +1,2 @@
-fake security site with login page, using html + css + javascript + flask
+site that users can sign up + log into, and post images/text
+uses html + css + javascript + flask
