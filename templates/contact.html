@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en-gb">
+
+<!--metadata of the site--> 
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Alex Osinubi" />
+    <meta name="description" content="Contact The Priory Security Company here" />
+
+    <title>Contact Us</title>
+
+    <link 
+      rel="icon" href="../static/tpsecurity-icon3.ico" type="image/x-icon" />
+    <link 
+      rel="stylesheet" href="../static/stylesheets/tpsecurity.css" />
+
+    <script src="tpsecurity-script.js" defer> </script>
+    <!--defer means that the javascript loads after html loads:
+    javascript won't try access html elements before they exist-->
+
+
+
+  <body>
+    <header>
+      <h1>The Priory Security Company <img src="../static/images/priory-logo.jpg" alt="The Priory School Logo" width="40" /></h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="{{ url_for("home") }}" title="TPSecurity Home">Home</a></li>
+        <li><a href="{{ url_for("login") }}" title="T-Portal Login">Login</a></li>
+        <li><a href="{{ url_for("vision") }}" title="Our Vision">Our Vision</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <article>
+
+          <h2>Contact Us</h2>
+
+          <section>
+            <h3>Contact Information</h3>
+            <address>
+                <p> 
+                    The Priory School <br>
+                    Bedford Rd <br>
+                    Hitchin <br>
+                    SG5 2UR <br>
+                    England, UK <br>
+                </p>
+            </address>
+        </section>
+
+        <section>
+
+            <form action="{{ url_for("contact") }}" method="post">
+              <h3>Contact Us</h3> 
+              <p>
+                Fill this form if you have any inquiries or any issues you would like to 
+                bring up!
+              </p>
+
+              <p>
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" required/>            
+              </p>
+              <p>
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" required/>
+              </p>
+              
+              <p>
+                <label for="password">Email</label>
+                <input type="email" name="email" id="email" required/>
+              </p>
+              
+              <p>
+                <label for="enquiry">Enquiry</label>
+                <textarea name="enquiry" id="enquiry" rows="5" cols="33" required></textarea>
+              <p>
+
+                <button>Submit</button>
+              </p>
+
+            </form>
+
+        </section>
+
+      </article>
+
+      <aside>
+        <!-- nothing to curerntly put here -->
+      </aside>
+
+    </main>
+
+    <footer>
+      <p> Copyright 2025 by Alex Osinubi. All rights reserved.
+        <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Creating_the_content">
+          Learn more about our vision here.
+        </a>
+    </footer>
+  </body>
+</html>
