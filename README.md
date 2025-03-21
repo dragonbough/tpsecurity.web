@@ -1,2 +1,2 @@
-site that users can sign up + log into, and post images/text
-uses html + css + javascript + flask
+<p>site that users can sign up + log into, and post images/text</p>
+<p>uses html + css + javascript + flask</p>
